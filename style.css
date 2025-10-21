@@ -1,0 +1,59 @@
+@font-face {
+    font-family: A;
+    src: url(Fonts/SansStdVF.ttf);
+}
+@font-face {
+    font-family: B;
+    src: url(Fonts/SansExpVF.ttf);
+}
+@font-face {
+    font-family: C;
+    src: url(Fonts/clarissans.ttf);
+}
+@font-face {
+    font-family: D;
+    src: url(Fonts/Mairy\ Regular.otf);
+}
+@font-face {
+    font-family: E;
+    src: url();
+}
+.colorcode{
+  color:#8F00FF #FBFFFF #0E0E10 ;
+}
+*{
+    box-sizing: border-box;
+}
+.temp{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 70%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        position: absolute;
+        width: 350px;
+    }
+    h3{
+        position: absolute;
+        bottom: 15%;
+        width: 300px;
+        font-family: C;
+        letter-spacing: 2px;
+        color:#FBFFFF;
+        background-color:#8F00FF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}
