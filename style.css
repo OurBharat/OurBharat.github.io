@@ -24,6 +24,9 @@
 *{
     box-sizing: border-box;
 }
+body{
+    background-color: #FBFFFF;
+}
 .temp{
     position: absolute;
     top: 0;
