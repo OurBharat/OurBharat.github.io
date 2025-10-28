@@ -1,0 +1,197 @@
+@font-face {
+    font-family: A;
+    src: url(Fonts/SansStdVF.ttf);
+}
+@font-face {
+    font-family: B;
+    src: url(Fonts/SansExpVF.ttf);
+}
+@font-face {
+    font-family: C;
+    src: url(Fonts/clarissans.ttf);
+}
+@font-face {
+    font-family: D;
+    src: url(Fonts/Mairy\ Regular.otf);
+}
+@font-face {
+    font-family: E;
+    src: url();
+}
+@media screen and (max-width: 767px){
+    .nav{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+}
+.colorcode{
+  color:#8F00FF #FBFFFF #0E0E10 ;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #0E0E10;
+}
+.header{
+
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+
+    .logo{
+        position: absolute;
+        left: 20%;
+        width: 130px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .outline {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    }
+
+    .rect {
+    stroke-dashoffset: 5;
+    stroke-dasharray: 0 0 10 40 10 40;
+    transition: 0.5s;
+    stroke: #8F00FF;
+    position:absolute;
+    width: 600px;
+    }
+
+    .nav {
+    position:absolute;
+    width: 600px;
+    height: 60px;
+    border-radius: 40px;
+    font-family: B;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    }
+
+    .container:hover .outline .rect {
+    transition: 999999s;
+    stroke-dashoffset: 1;
+    stroke-dasharray: 0;
+    }
+
+    .container {
+    position:absolute;
+    inset: 0;
+    background: rgba(16, 16, 16, 0.4);
+    display: flex;
+    
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5em;
+    }
+
+    .btn {
+    padding: 0.5em 1.5em;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.1s;
+    text-decoration: NONE;
+    }
+
+    .btn:hover {
+    background: #8F00FF;
+    border-radius: 10px;
+    }
+
+    .btn:nth-child(1):hover ~ svg .rect {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0 2 8 73.3 8 10.7;
+    }
+
+    .btn:nth-child(2):hover ~ svg .rect {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0 12.6 9.5 49.3 9.5 31.6;
+    }
+
+    .btn:nth-child(3):hover ~ svg .rect {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0 24.5 8.5 27.5 8.5 55.5;
+    }
+
+    .btn:nth-child(4):hover ~ svg .rect {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0 34.7 6.9 10.2 6.9 76;
+    }
+
+    .btn:hover ~ .outline .rect {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0 0 10 40 10 40;
+    transition: 0.5s !important;
+    }
+    /* From Uiverse.io by Bodyhc */ 
+.search {
+  display: inline-block;
+  position: absolute;
+  right: 10%;
+  top: 0;
+  width: 350px;
+  height: 80px;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search input[type="text"] {
+  width: 200px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: B;
+  height: 50px;
+  width: 100%;
+  box-shadow: 1px 1px 35px #8F00FF;
+}
+
+.search button[type="submit"] {
+  background-color:#8F00FF;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  height: 50px;
+  width: 80px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: B;
+  transition: .9s ease;
+}
+.search input:focus{
+    outline: none;
+    border: none;
+}
+}
+.abb{
+
+    position: absolute;
+    top: 100px;
+        width: 100%;
+}
